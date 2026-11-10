@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b900ae33a2874b459c7dc86f37c4a0f, type: 3}
+  m_Name: CursorSet
+  m_EditorClassIdentifier: Assembly-CSharp::LastStand.Controls.CursorSet
+  defaultCursor: {fileID: 2800000, guid: 4d5590ec8214a7749b9413c87024994d, type: 3}
+  defaultHotspot: {x: 3, y: 3}
+  attackCursor: {fileID: 2800000, guid: 1424c34d39ad2d144b484fca3f67f6da, type: 3}
+  attackHotspot: {x: 3, y: 3}
+  targetCursor: {fileID: 2800000, guid: 8fb70159ffd8940499cac27b2bc46758, type: 3}
+  targetHotspot: {x: 24, y: 24}

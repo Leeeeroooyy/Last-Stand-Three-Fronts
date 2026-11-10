@@ -1,0 +1,178 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df9c6ee46acb45499461814f1cc5ac2, type: 3}
+  m_Name: MatchConfig
+  m_EditorClassIdentifier: Assembly-CSharp::LastStand.Match.MatchConfig
+  prepTime: 5
+  firstWaveTime: 0
+  waveInterval: 30
+  playerTeam: 1
+  playerHero: {fileID: 11400000, guid: da63a66edd8e87c4e8e14a5cedbb5348, type: 2}
+  heroRespawnTime: 6
+  meleeCreep: {fileID: 11400000, guid: a42b7accdf0507f48b6ca4653b4137b7, type: 2}
+  rangedCreep: {fileID: 11400000, guid: a24d87aa0856d084c8c7bc422c136adb, type: 2}
+  meleePerWave: 3
+  rangedPerWave: 1
+  megaHealthMultiplier: 1.6
+  megaDamageMultiplier: 1.4
+  towerStats:
+  - maxHealth: 1800
+    healthRegen: 0
+    maxMana: 0
+    manaRegen: 0
+    armor: 12
+    magicResist: 0
+    damageMin: 100
+    damageMax: 120
+    attackRange: 10.5
+    baseAttackTime: 1
+    attackSpeed: 100
+    attackPoint: 0.2
+    attackBackswing: 0.1
+    projectileSpeed: 18
+    moveSpeed: 0
+    turnRate: 900
+    acquisitionRange: 10.5
+    visionRange: 16
+    goldBounty: 0
+    xpBounty: 0
+  - maxHealth: 2400
+    healthRegen: 0
+    maxMana: 0
+    manaRegen: 0
+    armor: 15
+    magicResist: 0
+    damageMin: 120
+    damageMax: 140
+    attackRange: 10.5
+    baseAttackTime: 1
+    attackSpeed: 100
+    attackPoint: 0.2
+    attackBackswing: 0.1
+    projectileSpeed: 18
+    moveSpeed: 0
+    turnRate: 900
+    acquisitionRange: 10.5
+    visionRange: 16
+    goldBounty: 0
+    xpBounty: 0
+  - maxHealth: 2700
+    healthRegen: 0
+    maxMana: 0
+    manaRegen: 0
+    armor: 17
+    magicResist: 0
+    damageMin: 130
+    damageMax: 150
+    attackRange: 10.5
+    baseAttackTime: 1
+    attackSpeed: 100
+    attackPoint: 0.2
+    attackBackswing: 0.1
+    projectileSpeed: 18
+    moveSpeed: 0
+    turnRate: 900
+    acquisitionRange: 10.5
+    visionRange: 16
+    goldBounty: 0
+    xpBounty: 0
+  - maxHealth: 2900
+    healthRegen: 0
+    maxMana: 0
+    manaRegen: 0
+    armor: 20
+    magicResist: 0
+    damageMin: 140
+    damageMax: 160
+    attackRange: 10.5
+    baseAttackTime: 1
+    attackSpeed: 100
+    attackPoint: 0.2
+    attackBackswing: 0.1
+    projectileSpeed: 18
+    moveSpeed: 0
+    turnRate: 900
+    acquisitionRange: 10.5
+    visionRange: 16
+    goldBounty: 0
+    xpBounty: 0
+  towerProjectileDawn: {fileID: 1955892497852020711, guid: 8481ec0b0bc927e40bf112e14f06cb3b, type: 3}
+  towerProjectileDusk: {fileID: 1816599278755514599, guid: e6f3f1b8ed8398d4793d7bb75cd0373b, type: 3}
+  barracksMeleeStats:
+    maxHealth: 2200
+    healthRegen: 5
+    maxMana: 0
+    manaRegen: 0
+    armor: 15
+    magicResist: 0
+    damageMin: 0
+    damageMax: 0
+    attackRange: 0
+    baseAttackTime: 1.7
+    attackSpeed: 100
+    attackPoint: 0.35
+    attackBackswing: 0.3
+    projectileSpeed: 0
+    moveSpeed: 0
+    turnRate: 900
+    acquisitionRange: 8
+    visionRange: 14
+    goldBounty: 0
+    xpBounty: 0
+  barracksRangedStats:
+    maxHealth: 1300
+    healthRegen: 2.5
+    maxMana: 0
+    manaRegen: 0
+    armor: 9
+    magicResist: 0
+    damageMin: 0
+    damageMax: 0
+    attackRange: 0
+    baseAttackTime: 1.7
+    attackSpeed: 100
+    attackPoint: 0.35
+    attackBackswing: 0.3
+    projectileSpeed: 0
+    moveSpeed: 0
+    turnRate: 900
+    acquisitionRange: 8
+    visionRange: 14
+    goldBounty: 0
+    xpBounty: 0
+  ancientStats:
+    maxHealth: 4500
+    healthRegen: 3
+    maxMana: 0
+    manaRegen: 0
+    armor: 13
+    magicResist: 0
+    damageMin: 0
+    damageMax: 0
+    attackRange: 0
+    baseAttackTime: 1.7
+    attackSpeed: 100
+    attackPoint: 0.35
+    attackBackswing: 0.3
+    projectileSpeed: 0
+    moveSpeed: 0
+    turnRate: 900
+    acquisitionRange: 8
+    visionRange: 14
+    goldBounty: 0
+    xpBounty: 0
+  fountainRadius: 8
+  fountainHealPercent: 6
+  fountainManaPercent: 6
+  fountainDamagePerSecond: 300
+  structureDestroyedVfx: {fileID: 8019935611975733189, guid: 271c4ae705e72ac4098d13490e83ab8d, type: 3}
+  unitDeathVfx: {fileID: 3761033002959212069, guid: 908bf11aa71a99848b882fd3cf79d729, type: 3}

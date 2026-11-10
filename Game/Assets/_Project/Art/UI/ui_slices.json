@@ -1,0 +1,60 @@
+{
+  "borders": [
+    {
+      "path": "UI/panel.png",
+      "l": 28,
+      "b": 28,
+      "r": 28,
+      "t": 28
+    },
+    {
+      "path": "UI/plate.png",
+      "l": 28,
+      "b": 28,
+      "r": 28,
+      "t": 28
+    },
+    {
+      "path": "UI/tag.png",
+      "l": 10,
+      "b": 8,
+      "r": 10,
+      "t": 8
+    },
+    {
+      "path": "UI/bar_frame.png",
+      "l": 22,
+      "b": 12,
+      "r": 22,
+      "t": 12
+    },
+    {
+      "path": "UI/world_bar.png",
+      "l": 8,
+      "b": 5,
+      "r": 8,
+      "t": 5
+    },
+    {
+      "path": "UI/button.png",
+      "l": 42,
+      "b": 20,
+      "r": 42,
+      "t": 20
+    },
+    {
+      "path": "UI/hud_strip.png",
+      "l": 0,
+      "b": 0,
+      "r": 0,
+      "t": 24
+    },
+    {
+      "path": "UI/thin_bar.png",
+      "l": 16,
+      "b": 8,
+      "r": 16,
+      "t": 8
+    }
+  ]
+}

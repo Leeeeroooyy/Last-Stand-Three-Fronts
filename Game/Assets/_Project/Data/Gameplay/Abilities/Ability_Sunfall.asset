@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9660ed9545bd5946b4257dbd4b9a6ac, type: 3}
+  m_Name: Ability_Sunfall
+  m_EditorClassIdentifier: Assembly-CSharp::LastStand.Abilities.DelayedAreaAbility
+  displayName: Sunfall
+  description: Calls down a pillar of the sun. After a short delay it scorches the area and stuns every enemy caught inside.
+  icon: {fileID: 21300000, guid: e0355bc8696c10d429f1dba61e1f85cf, type: 3}
+  element: 1
+  isUltimate: 1
+  maxLevel: 3
+  targeting: 2
+  targetTeam: 0
+  castPoint: 0.3
+  manaCost:
+  - 150
+  - 200
+  - 250
+  cooldown:
+  - 70
+  - 60
+  - 50
+  castRange:
+  - 12
+  areaRadius:
+  - 4.5
+  lineWidth: 0
+  delay: 1
+  damage:
+  - 200
+  - 325
+  - 450
+  damageType: 1
+  stunDuration:
+  - 1.5
+  - 1.75
+  - 2
+  stun:
+    id: stun
+    duration: 1.5
+    isDebuff: 1
+    moveSpeedPercent: 0
+    attackSpeedBonus: 0
+    armorBonus: 0
+    damageBonus: 0
+    healthRegenBonus: 0
+    states: 1
+    damagePerSecond: 0
+    damageType: 1
+    element: 0
+    attachedVfx: {fileID: 495232017416787761, guid: 934bbac7d41ad0841aa622e714447dd6, type: 3}
+    vfxHeight: 1.02
+  telegraphVfx: {fileID: 8703968144743823791, guid: 2a22ef827e0242141b754345f928a1a6, type: 3}
+  impactVfx: {fileID: 4059267948125514640, guid: 4d56d576b8b636c4387dfdb253b23dbd, type: 3}
+  hitVfx: {fileID: 2047238696323652632, guid: ac038c9020357b04692c7bbc3677733b, type: 3}

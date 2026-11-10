@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22ff8221be50c3741aaed31530339610, type: 3}
+  m_Name: Creep_Ranged
+  m_EditorClassIdentifier: Assembly-CSharp::LastStand.Creeps.CreepDefinition
+  creepName: Sunseer
+  type: 1
+  dawnPrefab: {fileID: 872199433957952427, guid: 6a83b7b2e9320344f82f686de1552ea3, type: 3}
+  duskPrefab: {fileID: 940315802869551617, guid: 606bb0f1217056f4ea4c9439ca37c306, type: 3}
+  stats:
+    maxHealth: 300
+    healthRegen: 0.5
+    maxMana: 0
+    manaRegen: 0
+    armor: 0
+    magicResist: 0
+    damageMin: 21
+    damageMax: 26
+    attackRange: 7
+    baseAttackTime: 1
+    attackSpeed: 100
+    attackPoint: 0.5
+    attackBackswing: 0.67
+    projectileSpeed: 14
+    moveSpeed: 5
+    turnRate: 720
+    acquisitionRange: 8
+    visionRange: 12
+    goldBounty: 50
+    xpBounty: 69
+  bodyRadius: 0.45
+  barHeight: 2.3

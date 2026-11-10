@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffcc278908e7dd346bb3bae6cf982383, type: 3}
+  m_Name: Ability_SolarLance
+  m_EditorClassIdentifier: Assembly-CSharp::LastStand.Abilities.SkillshotAbility
+  displayName: Solar Lance
+  description: Hurls a lance of living sunlight in a line. It pierces every enemy on its path and sets them ablaze.
+  icon: {fileID: 21300000, guid: 1f5750d0dc4b6f349855d04be6b84c7e, type: 3}
+  element: 1
+  isUltimate: 0
+  maxLevel: 4
+  targeting: 3
+  targetTeam: 0
+  castPoint: 0.25
+  manaCost:
+  - 90
+  - 100
+  - 110
+  - 120
+  cooldown:
+  - 9
+  - 8
+  - 7
+  - 6
+  castRange:
+  - 12
+  areaRadius:
+  - 0
+  lineWidth: 1.5
+  damage:
+  - 90
+  - 150
+  - 210
+  - 270
+  damageType: 1
+  speed: 28
+  pierce: 1
+  flightHeight: 1.2
+  onHit:
+    id: solar_burn
+    duration: 3
+    isDebuff: 1
+    moveSpeedPercent: 0
+    attackSpeedBonus: 0
+    armorBonus: 0
+    damageBonus: 0
+    healthRegenBonus: 0
+    states: 0
+    damagePerSecond: 15
+    damageType: 1
+    element: 1
+    attachedVfx: {fileID: 4849760030601193668, guid: a1e2e8f0530592c46bb71f96cbeb00e9, type: 3}
+    vfxHeight: 0.35
+  projectileVfx: {fileID: 6657387388458088995, guid: b0cbbea9b25ff914bb1838077c7e38e7, type: 3}
+  hitVfx: {fileID: 2047238696323652632, guid: ac038c9020357b04692c7bbc3677733b, type: 3}
+  castVfx: {fileID: 6454278851853136065, guid: f69bb02927c7d364fb928dbb291eff95, type: 3}

@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37000f4e8d7ac314fa0add0021927753, type: 3}
+  m_Name: Hero_SunWarden
+  m_EditorClassIdentifier: Assembly-CSharp::LastStand.Heroes.HeroDefinition
+  heroName: Aurel
+  title: the Sun Warden
+  role: 0
+  lore: Last knight of the Dawn order, sworn to hold the three fronts until the sun rises again.
+  portrait: {fileID: 21300000, guid: 855515747e48928479e4b8020e8c5a4d, type: 3}
+  accentColor: {r: 0.95, g: 0.78, b: 0.42, a: 1}
+  prefab: {fileID: 994514740244573163, guid: f6442f8bc7901284db3b4636c1814f29, type: 3}
+  stats:
+    maxHealth: 640
+    healthRegen: 2.2
+    maxMana: 320
+    manaRegen: 1.4
+    armor: 3
+    magicResist: 0.25
+    damageMin: 48
+    damageMax: 56
+    attackRange: 1.4
+    baseAttackTime: 1.7
+    attackSpeed: 110
+    attackPoint: 0.35
+    attackBackswing: 0.35
+    projectileSpeed: 0
+    moveSpeed: 6.2
+    turnRate: 1000
+    acquisitionRange: 7
+    visionRange: 14
+    goldBounty: 0
+    xpBounty: 0
+  bodyRadius: 0.5
+  barHeight: 3.2
+  abilities:
+  - {fileID: 11400000, guid: 7a5ae534e3da5054486845f35a32af6d, type: 2}
+  - {fileID: 11400000, guid: f645f74c6f56d6c468df2034f4402e9d, type: 2}
+  - {fileID: 11400000, guid: 3c5aac37379b8384fb69d8fcd73d758a, type: 2}
+  - {fileID: 11400000, guid: 8d503ba6af7e76642bc6b09860f617a5, type: 2}

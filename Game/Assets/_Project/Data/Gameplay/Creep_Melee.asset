@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22ff8221be50c3741aaed31530339610, type: 3}
+  m_Name: Creep_Melee
+  m_EditorClassIdentifier: Assembly-CSharp::LastStand.Creeps.CreepDefinition
+  creepName: Footman
+  type: 0
+  dawnPrefab: {fileID: 8391354041905647180, guid: 816c1d563caa07b439547f30912814ff, type: 3}
+  duskPrefab: {fileID: 49310818673569251, guid: 9bd549a2687b3e6489db94bd0fca1ff7, type: 3}
+  stats:
+    maxHealth: 550
+    healthRegen: 0.5
+    maxMana: 0
+    manaRegen: 0
+    armor: 2
+    magicResist: 0
+    damageMin: 19
+    damageMax: 23
+    attackRange: 1.2
+    baseAttackTime: 1
+    attackSpeed: 100
+    attackPoint: 0.47
+    attackBackswing: 0.53
+    projectileSpeed: 0
+    moveSpeed: 5
+    turnRate: 720
+    acquisitionRange: 7.5
+    visionRange: 12
+    goldBounty: 40
+    xpBounty: 57
+  bodyRadius: 0.45
+  barHeight: 2.3

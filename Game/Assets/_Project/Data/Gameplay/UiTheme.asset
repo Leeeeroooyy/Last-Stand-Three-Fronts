@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c4bc5eb51c73ad4ca9e294c3cdd06a5, type: 3}
+  m_Name: UiTheme
+  m_EditorClassIdentifier: Assembly-CSharp::LastStand.UI.UiTheme
+  titleFont: {fileID: 11400000, guid: 424d79fe4e230244485b4aa0917af8de, type: 2}
+  bodyFont: {fileID: 11400000, guid: f03ecd7d9f13fa1498402371973a6593, type: 2}
+  gold: {r: 0.914, g: 0.773, b: 0.51, a: 1}
+  goldLight: {r: 0.988, g: 0.898, b: 0.69, a: 1}
+  goldDim: {r: 0.66, g: 0.5, b: 0.27, a: 1}
+  textMuted: {r: 0.72, g: 0.74, b: 0.86, a: 1}
+  cream: {r: 0.933, g: 0.878, b: 0.761, a: 1}
+  selfHealth: {r: 0.45, g: 0.9, b: 0.5, a: 1}
+  allyHealth: {r: 0.33, g: 0.76, b: 0.44, a: 1}
+  enemyHealth: {r: 0.88, g: 0.29, b: 0.3, a: 1}
+  protectedHealth: {r: 0.55, g: 0.55, b: 0.6, a: 1}
+  mana: {r: 0.33, g: 0.56, b: 0.98, a: 1}
+  damageTrail: {r: 1, g: 0.93, b: 0.75, a: 0.9}
+  dawn: {r: 1, g: 0.76, b: 0.38, a: 1}
+  dusk: {r: 0.74, g: 0.45, b: 1, a: 1}

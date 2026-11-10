@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using LastStand.CameraControl;
 using LastStand.Map;
-using LastStand.Prototype;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
@@ -76,15 +75,17 @@ namespace LastStand.EditorTools.MapGeneration
                 navGo.transform.SetParent(setup, false);
                 navGo.AddComponent<MapNavMesh>().Data = nav;
 
-                Progress("Камера и тестовый герой…", 0.9f);
-                Transform hero = BuildTestHero(heroSpawn, assets);
-                BuildCamera(setup, hero);
+                Progress("Камера…", 0.9f);
+                BuildCamera(setup, heroSpawn);
 
                 RenderSettings.sun = sun;
                 var scene = EditorSceneManager.GetActiveScene();
                 EditorSceneManager.MarkSceneDirty(scene);
                 EditorSceneManager.SaveScene(scene, ScenePath);
                 AssetDatabase.SaveAssets();
+
+                // Если геймплей уже собран — сразу добавляем матч, HUD и управление в новую сцену.
+                Gameplay.GameplaySceneSetup.TryApplyAfterGeneration();
                 Debug.Log($"[Last Stand] Карта сгенерирована: {ScenePath}");
             }
             finally
@@ -506,37 +507,7 @@ namespace LastStand.EditorTools.MapGeneration
             return data;
         }
 
-        // ================= Камера и тестовый герой =================
-
-        private static Transform BuildTestHero(Transform spawn, MapAssetFactory a)
-        {
-            var hero = GameObject.CreatePrimitive(PrimitiveType.Capsule);
-            hero.name = "TestHero (prototype)";
-            Vector3 pos = spawn != null ? spawn.position : Vector3.zero;
-            hero.transform.SetPositionAndRotation(pos + Vector3.up * 1f, spawn != null ? spawn.rotation : Quaternion.identity);
-            hero.GetComponent<MeshRenderer>().sharedMaterial = a.HeroDawn;
-
-            var nose = GameObject.CreatePrimitive(PrimitiveType.Cube);
-            nose.name = "Facing";
-            Object.DestroyImmediate(nose.GetComponent<Collider>());
-            nose.transform.SetParent(hero.transform, false);
-            nose.transform.localPosition = new Vector3(0f, 0.45f, 0.45f);
-            nose.transform.localScale = new Vector3(0.35f, 0.18f, 0.35f);
-            nose.GetComponent<MeshRenderer>().sharedMaterial = AssetDatabase.LoadAssetAtPath<Material>(MapAssetFactory.MaterialsDir + "/M_Glow_Dawn.mat");
-
-            var agent = hero.AddComponent<NavMeshAgent>();
-            agent.baseOffset = 1f;
-            agent.radius = 0.5f;
-            agent.height = 2f;
-            agent.speed = 7f;
-            agent.angularSpeed = 900f;
-            agent.acceleration = 60f;
-            agent.stoppingDistance = 0.1f;
-            agent.autoBraking = true;
-            agent.enabled = false; // включится в Start после проверки NavMesh
-            hero.AddComponent<TestHeroMover>();
-            return hero.transform;
-        }
+        // ================= Камера =================
 
         private static void BuildCamera(Transform parent, Transform hero)
         {
